@@ -1,23 +1,23 @@
-import { ButtonSignin } from "../ButtonSignIn/ButtonSignIn";
-import "./style.css";
+import "./style.css"; // Make sure this path is correct
 
-export default function SignUp() {
+export const SignUpComponent = ({ onClose, text}) => {
   return (
-    <div className="box">
-      <div className="group">
-        <div className="overlap-group">
-          <div className="textbox">
-            <div className="div">Email</div>
-          </div>
-          <div className="div-wrapper">
-          <div className="div">Password</div>
+    <div className="modal-background">
+      <div className="modal-container">
+        <div className="modal-header">
+          <button className="close-button" onClick={onClose}>×</button>
         </div>
-        <div className="text-wrapper-2">Sign in</div>
-        <ButtonSignin>
-            className="button-signin-instance"
-        </ButtonSignin>
+        <div className="modal-content">
+          <h2>{text}</h2>
+          <div className="input-container">
+            <input type="text" id="email" name="email" placeholder="Email" />
+          </div>
+          <div className="input-container">
+            <input type="password" id="password" name="password" placeholder="Password" />
+          </div>
+          <button type="submit" className="submit-button">{text}</button>
         </div>
       </div>
     </div>
   );
-}
+};

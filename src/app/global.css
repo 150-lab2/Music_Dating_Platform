@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@500&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-poppins: Poppins;
+  --buttons: "Helvetica Neue";
+
+  /* font sizes */
+  --font-size-smi: 13px;
+  --buttons-size: 15px;
+
+  /* Colors */
+  --color-white: #fff;
+  --headlines: #393939;
+  --primary-buttons: #11253e;
+  --color-gray-100: rgba(255, 255, 255, 0.24);
+
+  /* Gaps */
+  --gap-0: 0px;
+
+  /* Paddings */
+  --padding-smi: 13px;
+
+  /* Border radiuses */
+  --br-81xl: 100px;
+  --br-33xl: 52px;
+}

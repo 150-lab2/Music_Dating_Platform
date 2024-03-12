@@ -7,7 +7,7 @@ export const PrimaryButton = ({
 }) => {
   return (
     <div className={`primary-button ${className}`}>
-      <div className={`text`}>Sign In</div>
+      <div className={`text`}>Sign Up</div>
       <img className="vector" alt="Vector" src={vector} />
     </div>
   );
