@@ -1,4 +1,18 @@
+import dbConnect from '../../../config/dbConnect'; 
+import bcryptjs from 'bcryptjs';
+import User from '../../../models/User'; 
+import jwt from 'jsonwebtoken';
+
+export async function POST(request) {
+    await dbConnect();
+    const data = await request.json;
+    return Response.json({
+        hello: "world",
+    });
+}
+
 // pages/api/signup.js
+/*
 import dbConnect from '../../config/dbConnect';
 import bcrypt from 'bcrypt';
 import User from '../../models/User'; 
@@ -32,3 +46,4 @@ export default async function registerUser(req, res) {
         res.status(500).json({ message: err.message });
     }
 }
+*/

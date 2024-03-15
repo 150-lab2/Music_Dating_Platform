@@ -19,7 +19,8 @@ export const SignUpComponent = ({ onClose, text }) => {
       return;
     }
 
-    const url = isSignup ? 'http://localhost:5501/signup' : 'http://localhost:5501/login';
+    const url = isSignup ? '/api/signup' : 'http://localhost:5501/login';
+    console.log(url);
     const body = isSignup ? { username, password, email } : { username, password };
 
     try {
