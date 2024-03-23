@@ -26,7 +26,7 @@ app.use(cookieParser())
 app.use(express.json()) //parses the data in POST and PUT requests which allows us to extract information from the request body
 app.use(express.urlencoded({ extended: true }))
 
-app.use(express.static('views'));
+//app.use(express.static('views'));
 
 let connectionNumber = 0;
 io.on('connection', (socket) => {
@@ -62,6 +62,12 @@ app.use('/index', require('./routes/mainpage'));
 app.use('/message', require('./routes/messages'));
 app.use('/profile', require('./routes/profilepage'));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+app.use(express.static(path.join(__dirname, 'frontend/build')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
+});
 
 mongoose.connection.once('open', () => {
     console.log('connected to mongoDB');
