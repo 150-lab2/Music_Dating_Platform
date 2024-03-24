@@ -1,6 +1,7 @@
 
 const UserDisplay = ({}) => {
     return (
+        <div className="userdisplay-container">
           <div className="overlap-group-wrapper">
             <div className="overlap-2">
               <div className="rectangle-2" />
@@ -36,6 +37,7 @@ const UserDisplay = ({}) => {
               </button>
             </div>
           </div>
+        </div>
     );
 };
 
