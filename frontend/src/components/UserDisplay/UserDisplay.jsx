@@ -1,4 +1,3 @@
-
 const UserDisplay = ({}) => {
     return (
         <div className="userdisplay-container">
