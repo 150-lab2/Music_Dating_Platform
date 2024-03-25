@@ -1,4 +1,4 @@
-import UserDisplay from '../UserDisplay/UserDisplay';
+import UserDisplay from '../../components/UserDisplay/UserDisplay';
 import "./style.css";
 
 export default function MainPage() {

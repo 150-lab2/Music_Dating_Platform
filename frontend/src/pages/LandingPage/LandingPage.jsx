@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import ButtonSignin from "../ButtonSignIn/ButtonSignIn";
-import PrimaryButton from "../PrimaryButton/PrimaryButton";
-import SignUpComponent from "../SignUpComponent/SignUpComponent";
-import UserDisplay from "../UserDisplay/UserDisplay";
-import SquareDisplay from "../SquareDisplay/SquareDisplay";
+import ButtonSignin from "../../components/ButtonSignIn/ButtonSignIn";
+import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
+import SignUpComponent from "../../components/SignUpComponent/SignUpComponent";
+import SquareDisplay from "../../components/SquareDisplay/SquareDisplay";
 import "./style.css";
 
 function SignInOverlay({ onClose }) {

@@ -1,5 +1,4 @@
-import UserDisplay from '../UserDisplay/UserDisplay';
-import SquareDisplay from '../SquareDisplay/SquareDisplay'
+import SquareDisplay from '../../components/SquareDisplay/SquareDisplay'
 
 const TestPage = () => {
     return (
