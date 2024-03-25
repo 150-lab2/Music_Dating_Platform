@@ -1,4 +1,4 @@
-.music-card {
+.user-card {
   position: relative;
   width: 500px; /* Adjust as necessary */
   border-radius: 20px;
@@ -51,4 +51,3 @@
   color: red;
 }
 
-/* Add additional styling as necessary */

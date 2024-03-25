@@ -6,6 +6,11 @@
   width: 100%;
 }
 
+.landing-user-card {
+    margin-left: 50%;
+    transform: translateY(40%);
+}
+
 .landing .overlap-wrapper {
   background-color: var(--white);
   height: 800px;

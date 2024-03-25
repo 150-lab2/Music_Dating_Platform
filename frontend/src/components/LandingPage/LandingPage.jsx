@@ -3,6 +3,7 @@ import ButtonSignin from "../ButtonSignIn/ButtonSignIn";
 import PrimaryButton from "../PrimaryButton/PrimaryButton";
 import SignUpComponent from "../SignUpComponent/SignUpComponent";
 import UserDisplay from "../UserDisplay/UserDisplay";
+import SquareDisplay from "../SquareDisplay/SquareDisplay";
 import "./style.css";
 
 function SignInOverlay({ onClose }) {
@@ -69,7 +70,9 @@ export default function LandingPage() {
               <img className="frame" alt="Frame" src="/frame-1.svg" />
             </div>
           </div>
-          <UserDisplay />
+          <div className="landing-user-card">
+            <SquareDisplay />
+          </div>
           <div className="text-wrapper-2">cadence</div>
           <img
             className="untitled-recovered"
