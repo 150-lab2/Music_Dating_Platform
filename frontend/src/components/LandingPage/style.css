@@ -8,7 +8,9 @@
 
 .landing-user-card {
     margin-left: 55%;
-    transform: translateY(36%);    
+    transform: scale(115.0%);
+    position: absolute;
+    top: 20%;
 }
 
 .landing .overlap-wrapper {
