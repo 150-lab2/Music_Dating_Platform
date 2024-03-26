@@ -17,7 +17,6 @@ export default function MainPage() {
                     </div>
                     <div className="group">
                         <div className="overlap-group-2">
-                            <UserDisplay />
                             <img className="rectangle" alt="Rectangle" src="https://c.animaapp.com/I2nDhD6p/img/rectangle-17.png" />
                             <div className="rectangle-2" />
                             <div className="rectangle-3" />

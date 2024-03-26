@@ -1,11 +1,12 @@
 import SquareDisplay from '../../components/SquareDisplay/SquareDisplay'
 import Sidebar from '../../components/Sidebar/Sidebar';
+import './style.css';
 
 const TestPage = () => {
     return (
-        <div>
+
+        <div className='testpage'>
             <Sidebar />
-            <SquareDisplay />
         </div>
     )
 }
